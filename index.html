@@ -8,6 +8,12 @@
 	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Roboto:400,700" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="./assets/css/bootstrap.css" type="text/css">
+	<!-- Include Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Include Bootstrap JavaScript and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="./assets/css/style.css" type="text/css">
 	<link rel="stylesheet" href="./assets/css/dark.css" type="text/css">
 
@@ -156,8 +162,80 @@
 
 							<div class="col-md-5">
 								<div class="position-relative">
+									<!-- <div id="results-carousel" class="carousel results-carousel">
+						                  <div class="item item-man1">
+						                     <video poster="" id="man1" autoplay controls muted loop playsinline webkit-playsinline height="300px"  >
+						                        <source src="./assets/face.mp4"
+						                           type="video/mp4">
+						                     </video>
+						                  </div>
+						              </div> -->
+									<!-- Create the carousel -->
+							        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+							            <div class="carousel-inner">
+							                <!-- Video 1 -->
+							                <div class="carousel-item active">
+							                    <div class="embed-responsive embed-responsive-16by9">
+                        							<!-- <iframe class="embed-responsive-item" src="./assets/face.mp4" frameborder="0" allowfullscreen></iframe> -->
+                        							 <video poster=""  autoplay controls muted loop playsinline webkit-playsinline  >
+                        							 	<source src="./assets/face.mp4" type="">
+                        							 </video>
+                        						</div>
+                        							 <span class="badge badge-over-video bg-primary badge-lg" >Instruct-NeRF2NeRF</span>
+                        							  <!-- <span class="text-white-40;">Neural radiance field editing</span> -->
+							                </div>
 
-									<div class="my-3 my-lg-0">
+							                <!-- Video 2 -->
+							                <div class="carousel-item">
+							                    <div class="embed-responsive embed-responsive-16by9">
+                        							<!-- <iframe class="embed-responsive-item" src="./assets/draggan.mp4" frameborder="0" allowfullscreen></iframe> -->
+                        							<video poster=""  autoplay controls muted loop playsinline webkit-playsinline >
+                        							 	<source src="./assets/draggan.mp4" type="">
+                        							 </video>
+                        						</div>
+                        							 <span class="badge badge-over-video bg-primary badge-lg">DragGAN</span> 
+                        							 <!-- <span class="text-white-40;">Image editing</span> -->
+							                </div>
+
+							                <!-- Video 3 -->
+							                <div class="carousel-item">
+							                	<div class="embed-responsive embed-responsive-16by9">
+                        							<!-- <iframe class="embed-responsive-item" src="./assets/instruct-pix2pix.mp4" frameborder="0" allowfullscreen></iframe> -->
+                        							<video poster=""  autoplay controls muted loop playsinline webkit-playsinline  >
+                        							 	<source src="./assets/instruct-pix2pix.mp4" type="">
+                        							 </video>
+                        						</div>
+                        							 <span class="badge badge-over-video bg-primary badge-lg">Instruct-Pix2Pix</span>
+                        							  <!-- <span class="text-white-40;">Image editing</span> -->
+							                </div>
+
+							                <!-- Video 3 -->
+							                <div class="carousel-item">
+							                	<div class="embed-responsive embed-responsive-16by9">
+                        							<!-- <iframe class="embed-responsive-item" src="./assets/instruct-pix2pix.mp4" frameborder="0" allowfullscreen></iframe> -->
+                        							<video poster=""  autoplay controls muted loop playsinline webkit-playsinline  >
+                        							 	<source src="./assets/snapfusion.mp4" type="">
+                        							 </video>
+                        						</div>
+                        							 <span class="badge badge-over-video bg-primary badge-lg">SnapFusion</span> 
+                        							 <!-- <span class="text-white-40;">Acceleration of generative AI on edge devices</span> -->
+							                </div>
+
+							                <!-- Add more video items as needed -->
+							            </div>
+
+							            <!-- Carousel controls -->
+							            <a class="carousel-control-prev" href="#videoCarousel" role="button" data-bs-slide="prev">
+							                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							                <span class="visually-hidden"></span>
+							            </a>
+							            <a class="carousel-control-next" href="#videoCarousel" role="button" data-bs-slide="next">
+							                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							                <span class="visually-hidden"></span>
+							            </a>
+							        </div>
+
+									<!-- <div class="my-3 my-lg-0">
 										<div>
 											<video width="300px" autoplay controls>
 								  				<source src="./assets/face.mp4" type="video/mp4" alt="Instruct-NeRF2NeRF">
@@ -175,7 +253,7 @@
 										<div>
 											<img src="./assets/DALLE.jpeg" width="300px">
 										</div>
-									</div>
+									</div> -->
 									
 								</div>
 							</div>
@@ -372,7 +450,7 @@
 
 							<a href="https://scholar.google.com/citations?user=c8koDJgAAAAJ" class="team">
 								<div class="team-image">
-									<img src="./assets/" alt="Wei Jiang">
+									<img src="./assets/wei_jiang.jpg" alt="Wei Jiang">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4 class="gradient-text">Wei Jiang</h4><span>Futurewei</span></div>
@@ -467,6 +545,12 @@
 	============================================= -->
 	<script src="./assets/js/jquery.js"></script>
 	<script src="./assets/js/plugins.js"></script>
+
+	<script>
+        $(document).ready(function () {
+            $('#videoCarousel').carousel();
+        });
+    </script>
 
 	<!-- Footer Scripts
 	============================================= -->
