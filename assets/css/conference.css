@@ -264,6 +264,31 @@ ul.tab-nav:not(.tab-nav-lg) li a {
 	z-index: 1;
 }
 
+
+ /* Overlapping badges */
+.carousel-item {
+    position: relative;
+}
+
+.badge-over-video {
+	padding-left:1rem;
+	padding-right:1rem;
+	/*position:absolute;*/
+	margin-top:.5em;
+	margin-left:-.25em;
+	color:white;
+	background-color:#00369f;
+	/*font-size:.8em*/
+
+    padding: 5px 10px; /* Padding for badge */
+    border-radius: 5px; /* Border radius for badge */
+}
+
+/* Larger badge text */
+.badge-lg {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+}
+
 #headquarters-map:after {
 	position: absolute;
 	content: '';
