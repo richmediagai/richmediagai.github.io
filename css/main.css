@@ -340,3 +340,31 @@ div.paper i.fas {
 		font-size: 13px;
 	}
 }
+
+
+
+
+.footer {
+    height: 30px; /* Set the height of your footer */
+}
+
+.bg-custom-black {
+    background-color: black;
+}
+
+.custom-text-white {
+    color: white !important;
+}
+
+
+.fixed-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black; /* Or any color */
+    color: white; /* Or any color */
+    text-align: center;
+    height: 30px; /* Adjust as needed */
+    line-height: 30px; /* For vertical centering of text */
+}
