@@ -8,7 +8,7 @@
 
   <meta name="keywords" content="wacv, workshop, wacv-2024, wacv2024, computer vision, machine learning, generative model, diffusion, LLM">
 
-  <link rel="shortcut icon" href="./img/">
+  <link rel="shortcut icon" href="./img/icon.png">
 
 
 
@@ -72,9 +72,9 @@
           <p><br /></p>
 <div class="row">
   <div class="col-xs-12">
-  <center><h2><b>WACV 2024 Workshop:</b></h2></center><br>
+  <center><h2>WACV 2024 Workshop on</h2></center>
     <center><h1>Rich Media with Generative AI</h1></center>
-        <center><b>Dates: </b>Thursday, Jan 8 (A.M.), 2024</center>
+        <center><b>Dates: </b>Thursday 8 Jan 9:00 am - 11:35 am (GMT-10), 2024</center>
   </div>
 </div>
 
@@ -149,7 +149,7 @@
     </a>
     <div class="people-name">
       <a href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a> 
-      <!-- <a href=""><img src="./img/Twitter_Social_Icon_Rounded_Square_Color.png" /></a> -->
+      <a href="https://twitter.com/junyanz89"><img src="./img/Twitter_Social_Icon_Rounded_Square_Color.png" /></a>
       <h6>Carnegie Mellon Univeristy</h6>
     </div>
   </div>
@@ -171,7 +171,7 @@
     </a>
     <div class="people-name">
       <a href="https://chenhsuanlin.bitbucket.io/">Chen-Hsuan Lin</a> 
-      <!-- <a href=""><img src="./img/Twitter_Social_Icon_Rounded_Square_Color.png" /></a> -->
+      <a href="https://twitter.com/chenhsuan_lin"><img src="./img/Twitter_Social_Icon_Rounded_Square_Color.png" /></a>
       <h6>NVIDIA</h6>
     </div>
   </div>
@@ -191,7 +191,7 @@
     </a>
     <div class="people-name">
       <a href="https://xingangpan.github.io/">Xingang Pan</a>
-       <!-- <a href=""><img src="./img/Twitter_Social_Icon_Rounded_Square_Color.png" /></a> -->
+      <a href="https://twitter.com/XingangP"><img src="./img/Twitter_Social_Icon_Rounded_Square_Color.png" /></a>
       <h6>Nanyang Technological Univeristy</h6>
     </div>
   </div>
@@ -230,12 +230,13 @@
 <div class="row">
   <div class="col-xs-12">
      <h2>Schedule</h2>
+     <p><font color="#76b900"><b>Hover over the titles to view the abstracts of each talk.</b></font></p>
      <table class="table schedule" style="border:none !important;">
       <thead class="thead-light">
         <tr>
         <th>Title</th>
         <th>Speaker</th>
-        <th>Time</th>
+        <th>Time (GMT-10)</th>
         </tr>
       </thead>
       <tbody>
@@ -247,14 +248,25 @@
         </tr>
 
         <tr>
-            <td>Data Ownership in Generative Models</td>
-            <td>Jun-Yan Zhu</td>
+            <td>
+              <!-- <span onmouseover="showModal()" onmouseout="hideModal()">Data Ownership in Generative Models</span> -->
+            <div class="hover-text">
+                Data Ownership in Generative Models
+                <div class="hidden-info">
+                  <p>Large-scale generative visual models, such as DALL·E2 and Stable Diffusion, have made content creation as little effort as writing a short text description. However, these models are typically trained on an enormous amount of Internet data, often containing copyrighted material, licensed images, and personal photos. How can we remove these images if creators decide to opt-out? How can we properly compensate them if they choose to opt in? </p>
+
+                  <p>In this talk, I will first describe an efficient method for removing copyrighted materials, artistic styles of living artists, and memorized images from pretrained text-to-image diffusion models. I will then discuss our data attribution algorithm for assessing the influence of each training image for a generated sample. Collectively, we aim to enable creators to retain control over the ownership of training images.</p>
+        <!-- Add more content as needed -->
+                </div>
+            </div>
+            </td>
+            <td><a href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a></td>
             <td>09:05 - 09:40</td>
         </tr>
 
         <tr>
             <td>TBA</td>
-            <td>Chen-Hsuan Lin</td>
+            <td><a href="https://chenhsuanlin.bitbucket.io/">Chen-Hsuan Lin</a></td>
             <td>09:40 - 10:15</td>
         </tr>
         <tr>
@@ -264,14 +276,22 @@
         </tr>
 
         <tr>
-            <td>Interactive Point-Dragging Manipulation of Visual Contents</td>
-            <td>Xingang Pan</td>
+            <td>
+              <div class="hover-text">
+                Interactive Point-Dragging Manipulation of Visual Contents
+                <div class="hidden-info">
+                  <p>Synthesizing visual content that meets users' needs often requires flexible and precise controllability of the pose, shape, expression, and layout of the generated objects. In this talk, I will introduce a powerful yet much less explored way of controlling deep generative models, that is, to "drag" any points of the image to precisely reach target points in a user-interactive manner. First, I will introduce DragGAN, which achieves such point-dragging manipulation on generative adversarial networks (GAN). As these manipulations are performed on the learned generative image manifold of a GAN, they tend to produce realistic outputs even for challenging scenarios such as hallucinating occluded content and deforming shapes that consistently follow the object's rigidity. Next, I will discuss the challenges and progress of enabling point-dragging manipulation on diffusion models, including our recent attempts that improve manipulation performance by introducing more structural priors.</p>
+        <!-- Add more content as needed -->
+                </div>
+            </div>
+            </td>
+            <td><a href="https://xingangpan.github.io/">Xingang Pan</a></td>
             <td>10:25 - 11:00</td>
         </tr>
 
         <tr>
             <td>TBA</td>
-            <td>Yanzhi Wang</td>
+            <td><a href="https://web.northeastern.edu/yanzhiwang/">Yanzhi Wang</a></td>
             <td>11:00 - 11:35</td>
         </tr>
 <!--         <tr>
@@ -388,7 +408,7 @@
 
 <footer class="fixed-footer">
         <div class="container">
-            © Copyright 2023 . Template by <a href="http://latentspace.cc/" class="external">Arash Vahdat</a>.
+            © 2023 Zhixiang Wang. Template by <a href="https://cvpr2022-tutorial-diffusion-models.github.io/" class="external">Arash Vahdat</a> &#x2192; <a href="https://nvlabs.github.io/eccv2020-limited-labels-data-tutorial/" class="external">Shalini De Mello</a> &#x2192; <a href="https://visualdialog.org/" class="external">https://visualdialog.org/</a>.
         </div>
     </footer>
 
@@ -402,5 +422,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!--     <script>
+    function showModal() {
+        document.getElementById("infoModal").style.display = "block";
+    }
+
+    function hideModal() {
+        document.getElementById("infoModal").style.display = "none";
+    }
+  </script> -->
+
   </body>
+
 </html>
