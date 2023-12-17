@@ -343,20 +343,6 @@ div.paper i.fas {
 
 
 
-
-.footer {
-    height: 30px; /* Set the height of your footer */
-}
-
-.bg-custom-black {
-    background-color: black;
-}
-
-.custom-text-white {
-    color: white !important;
-}
-
-
 .fixed-footer {
     width: 100%;
     position: fixed;
@@ -365,6 +351,33 @@ div.paper i.fas {
     background-color: black; /* Or any color */
     color: white; /* Or any color */
     text-align: center;
-    height: 30px; /* Adjust as needed */
-    line-height: 30px; /* For vertical centering of text */
+    height: 20px; /* Adjust as needed */
+    line-height: 20px; /* For vertical centering of text */
+    font-size: 12px; /* Smaller font size, adjust as needed */
+}
+
+
+.hover-text {
+    position: relative;
+    display: inline-block;
+}
+
+.hidden-info {
+    display: none;
+    position: absolute;
+    background-color: #e9f9f9;
+    border: 0px solid #ddd;
+    padding: 10px;
+    #max-height: 300px; /* Adjust as needed */
+    width: 600px; /* Adjust as needed */
+    #overflow-y: auto; /* Enables scrolling */
+    color: black; /* Or any color */
+    z-index: 1;
+    font-size: 12px; /* Smaller font size, adjust as needed */
+    border-radius: 10px; /* Rounded corners */
+
+}
+
+.hover-text:hover .hidden-info {
+    display: block;
 }
