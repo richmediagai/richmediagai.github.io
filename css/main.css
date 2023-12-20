@@ -381,3 +381,12 @@ div.paper i.fas {
 .hover-text:hover .hidden-info {
     display: block;
 }
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .hidden-info {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 100vw; /* Ensures it doesn't exceed the viewport width */
+        box-sizing: border-box; /* Includes padding and border in the element's total width */
+    }
+}
