@@ -1,1 +1,1 @@
-# generative-media.github.io
+# richmediagai.github.io
