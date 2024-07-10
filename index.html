@@ -168,15 +168,36 @@
     In comparison, the research community uses pseudo training data for many restoration tasks. For example, for super-resolution, the LR data is generated from the HR data by downsampling and adding degradation like noises and blurs. Such pseudo data do not match real gaming data. True LR gaming frames are high-quality, sharp and clear without noises or blurs. There are unnatural visual effects and object movements, but with limited motion blur, different from captured natural videos. We need ground-truth gaming data for effective training.
   </p>  
   <p>
-    In this competition, we provide a large computer-synthesized ground-truth dataset, targeting to different applications:
+    In this competition, a large computer-synthesized ground-truth dataset is provided, targeting two different applications:
             <ul>
               <li> <b>Track 1: Super Resolution in Deferred Rendering</b></li>
-              <p>This track aims to restore HR images from LR images along with additional GBuffers during the deferred rendering stage (i.e., segmentation map, depth map), supporting the gaming solution of transferring LR images with assistive information using reduced bits and restoring HR images on client side. Specifically, we employed the open source CARLA simulator and rendered 8 static 3D scenes and 8 dynamic 3D scenes, each with 20 sequences of 60 frames (totaling 19200 frames) at two different resolutions (1440p and 720p) with the Unreal Engine. Given the LR RGB images (720p) and additional HR GBuffers as input, the task is to develop algorithms to recover the HR RGB images (1440p). Algorithms will be evaluated based on 4 objective quality metrics: PSNR and SSIM to measure pixel-level distortion, LPIPS and FID to measure perceptual quality. The amount of additional GBuffers used will also be considered (the more GBuffers used, the more bits consumed potentially). For example, if two algorithms have similar distortion and quality metrics, the less bits consumed the better. 
+              <p>This track aims to restore HR images from LR images along with additional GBuffers during the deferred rendering stage (i.e., segmentation map, depth map), supporting the gaming solution of transferring LR images with assistive information using reduced bits and restoring HR images on client side. 
               </p>
+              <p>
+                The dataset has 320 LR-HR paired sequences at 1440p and 720p. Each sequence has 60 frames, totalling 19200 LR-HR paired frames. 
+                The sequences are rendered by the open source CARLA simulator with the Unreal Engine.
+                The paired sequences capture 3D scenes from 8 different towns (20 static scenes and 20 dynamic scenes for each town).         
+                The corresponding paired segmentation maps and depth maps synchronize with the RGB images are also provided.     
+              </p>
+              <p>
+                Given the LR RGB images (720p) and additional GBuffers as input, the task is to develop algorithms to recover the HR RGB images (1440p).                 
+              </p>
+              <p>Algorithms will be evaluated based on 4 objective quality metrics: PSNR and SSIM to measure pixel-level distortion, LPIPS and FID to measure perceptual quality. 
+                The amount of additional GBuffers used will also be considered (the more GBuffers used, the more bits consumed). For example, if two algorithms have similar distortion and quality metrics, the less bits consumed the better.</p>
               <p><b>Dataset download: TBD</b> </p>
               <p>Result submission: </p>
               <li> <b>Track 2: Multiview Video Frame Synthesis</b></li>          
-              <p>This track aims to synthesize intermediate frames from a sparse set of input frames in multiview videos, along with camera intrinsic and extrinsic parameters and additional segmentation maps and depth maps, supporting the multiview gaming solution of transferring part of multiview frames with assistive information using reduced bits and generating the remaining frames on client side. Specifically, based on the CARLA simulator, we rendered video sequences captured from six cameras mounted on the top of a car moving within a virtual 3D scene. The dataset includes 8 static scenes, each with 6 cameras, 20 sequences, 60 frames per sequence, totaling 57600 frames. Algorithms will be evaluated based on 4 objective quality metrics: PSNR and SSIM to measure pixel-level distortion, LPIPS and FID to measure perceptual quality. The amount of additional GBuffers used will also be considered (the more GBuffers used, the more bits consumed potentially). For example, if two algorithms have similar distortion and quality metrics, the less bits consumed the better.
+              <p>This track aims to synthesize intermediate frames from a sparse set of input frames in multiview videos, along with camera intrinsic and extrinsic parameters and additional segmentation maps and depth maps, supporting the multiview gaming solution of transferring part of multiview frames with assistive information using reduced bits and generating the remaining frames on client side. 
+              </p>
+              <p>
+                The dataset contains 160 sets of sequences rendered by CARLA simulator. Each set of sequences consists of static 3D scenes captured by six cameras mounted on the top of a car moving within one of the 8 towns. Each town has 20 sets of sequences and each sequence has 60 frames, totaling 57600 frames. 
+              </p>                  
+              <p>
+                For each set of sequences, a subset of multiview frames will be randomly selected as inputs, and the task is to synthesis the remaining frames. 
+              </p>
+              <p>
+                Algorithms will be evaluated based on 4 objective quality metrics: PSNR and SSIM to measure pixel-level distortion, LPIPS and FID to measure perceptual quality. The amount of additional GBuffers used will also be considered (the more GBuffers used, the more bits consumed potentially). For example, if two algorithms have similar distortion and quality metrics, the less bits consumed the better.
+              </p>
                 <p><b>Dataset download: TBD </b></p>
                 <p>Result submission: </p>  
               </p>
@@ -433,7 +454,7 @@
       </a>
       <div class="people-name">
          <a href="https://scholar.google.com/citations?user=XxKgdDQAAAAJ&hl=en">Lebin Zhou</a>
-        <h6>Santa Clara University/h6>
+        <h6>Santa Clara University</h6>
       </div>
     </center>
     </div>
