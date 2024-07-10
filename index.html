@@ -57,6 +57,7 @@
       <ul class="nav navbar-nav">
         <li><a href="#syllabus">Syllabus</a></li>
 		<li><a href="#speakers">Speakers</a></li>
+    <li><a href="#challenges">Challenges</a></li>
     <li><a href="#organizers">Orgnizers</a></li>
         <li><a href="#talks">Schedule</a></li>
       </ul>
@@ -72,8 +73,8 @@
   <div class="col-xs-12">
   <center><h2>ACCV 2024 Workshop on</h2></center>
     <center><h1>Rich Media with Generative AI</h1></center>
-        <center><b>Date: </b><del>Monday 10 Jan 9:00 am - 11:35 am (Hawaii Time/GMT-10), 2024</del></center>
-        <center><b>Location: </b><del>Naupaka II + Zoom</del></center>
+        <center><b>Date: </b><del>Monday 8 Dec 9:00 am - 5:00 pm (Vienam Time/GMT+7), 2024</del></center>
+        <center><b>Location: </b><del>Hanoi Vienam + Zoom</del></center>
         <!-- <center>To obtain the Zoom link, kindly fill out this <a href="https://forms.gle/4m8E8vkmTJ4D8vQAA">Google form</a> (if you do not have a ACCV registration).</center> -->
   </div>
 </div>
@@ -85,7 +86,7 @@
 </a> -->
 <!-- <br> -->
 <!-- <a> -->
-    <img src="./img/ACCV-Logo.png" style="height:80px" />
+    <img src="./img/ACCV-Hanoi-Logo_Dk-Blue-1024x226.jpg" style="height:80px" />
     <!-- <img src="./img/teaser.svg"> -->
 <!-- </a> -->
 </center>
@@ -134,8 +135,6 @@
 <br>
 <br>
 <br>
-
-
 
 
 <div class="row">
@@ -223,6 +222,39 @@
     </p>
   </div>
 </div>
+
+<br id="challenges"/>
+<h2>Challenges</h2>
+<br/>
+    <p>
+      Cloud gaming poses tremendous challenges for compression and transmission. To avoid delay and bandwidth overload, high-quality frames need to be heavily compressed with very low latency.
+      Traditional codecs like H.264/H.265/H.266 or recent neural video coding targeting natural videos generally do not perform well.      
+  </p>
+
+  <p>
+      Generative AI technologies, e.g., super-resolution, image synthesis and rendering, can largely alleviate the transmission issues. Server-side computation and transmission can be reduced by leveraging the computation power of client de- vices. For example, the server can render low-resolution (LR) frames to transmit, and high-resolution (HR) frames can be computed on client side. In multiview gaming, the server can render part of views to transmit, and the remaining views can be computed by client devices. Nvidia's Deep Learning Super Sampling (DLSS) has commercialized this idea, and one key factor of its success is the large-scale ground-truth LR-HR or multiview gaming data used for training.    
+  </p>
+  <p>
+    In comparison, the research community uses pseudo training data for many restoration tasks. For example, for super-resolution, the LR data is generated from the HR data by downsampling and adding degradation like noises and blurs. Such pseudo data do not match real gaming data. True LR gaming frames are high-quality, sharp and clear without noises or blurs. There are unnatural visual effects and object movements, but with limited motion blur, different from captured natural videos. We need ground-truth gaming data for effective training.
+  </p>  
+  <p>
+    In this competition, we provide a large computer-synthesized ground-truth dataset, targeting to different applications:
+            <ul>
+              <li> Track 1: Super Resolution in Deferred Rendering</li>
+              <p>This track aims to restore HR images from LR images along with additional GBuffers during the deferred rendering stage (i.e., segmentation map, depth map), supporting the gaming solution of transferring LR images with assistive information using reduced bits and restoring HR images on client side. Specifically, we employed the open source CARLA simulator and rendered 8 static 3D scenes and 8 dynamic 3D scenes, each with 20 sequences of 60 frames (totaling 19200 frames) at two different resolutions (1440p and 720p) with the Unreal Engine. Given the LR RGB images (720p) and additional HR GBuffers as input, the task is to develop algorithms to recover the HR RGB images (1440p). Algorithms will be evaluated based on 4 objective quality metrics: PSNR and SSIM to measure pixel-level distortion, LPIPS and FID to measure perceptual quality. The amount of additional GBuffers used will also be considered (the more GBuffers used, the more bits consumed potentially). For example, if two algorithms have similar distortion and quality metrics, the less bits consumed the better. 
+              </p>
+              <p>Dataset download: </p>
+              <p>Result submission: </p>
+              <li> Track 2: Multiview Video Frame Synthesis</li>          
+              <p>This track aims to synthesize intermediate frames from a sparse set of input frames in multiview videos, along with camera intrinsic and extrinsic parameters and additional segmentation maps and depth maps, supporting the multiview gaming solution of transferring part of multiview frames with assistive information using reduced bits and generating the remaining frames on client side. Specifically, based on the CARLA simulator, we rendered video sequences captured from six cameras mounted on the top of a car moving within a virtual 3D scene. The dataset includes 8 static scenes, each with 6 cameras, 20 sequences, 60 frames per sequence, totaling 57600 frames. Algorithms will be evaluated based on 4 objective quality metrics: PSNR and SSIM to measure pixel-level distortion, LPIPS and FID to measure perceptual quality. The amount of additional GBuffers used will also be considered (the more GBuffers used, the more bits consumed potentially). For example, if two algorithms have similar distortion and quality metrics, the less bits consumed the better.
+                <p>Dataset download: </p>
+                <p>Result submission: </p>  
+              </p>
+            </ul>
+  </p>
+  <p>
+    Competition result submission deadline: 
+  </p>
 
 
 <br id="talks" />
