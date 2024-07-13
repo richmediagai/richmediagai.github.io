@@ -178,14 +178,17 @@
                 The sequences are rendered by the open source CARLA simulator with the Unreal Engine.
                 The paired sequences capture 3D scenes from 8 different towns (20 static scenes and 20 dynamic scenes for each town).         
                 The corresponding paired segmentation maps and depth maps synchronize with the RGB images are also provided.     
+                Data collected from 7 towns form the training set, and data from the remaining 1 town form the test set. 
               </p>
               <p>
                 Given the LR RGB images (720p) and additional GBuffers as input, the task is to develop algorithms to recover the HR RGB images (1440p).                 
               </p>
               <p>Algorithms will be evaluated based on 4 objective quality metrics: PSNR and SSIM to measure pixel-level distortion, LPIPS and FID to measure perceptual quality. 
                 The amount of additional GBuffers used will also be considered (the more GBuffers used, the more bits consumed). For example, if two algorithms have similar distortion and quality metrics, the less bits consumed the better.</p>
-              <p><b>Dataset download: TBD</b> </p>
-              <p><b>Challenge result submission: </b></p>
+                <p><b>Dataset download:</b> <del>full training set (Baidu Netdisk) </del>; <del>mini training set (huggingface)</del>. <del>full test set (to be released later)</del> For each paired video sequence, 5 paired frames are randomly selected to form the mini dataset. <!--<a href="https://scholar.google.com/citations?user=VsGLu-QAAAAJ&hl=en">here</a> -->
+                <p><b>Code script:</b> with the dataset the organizers will provide scripts to assist data reading</p>
+                <p><b>Challenge result submission:</b> participants must upload the recovered HR RGB images for the test set through <del>link tbd</del></p>
+
               <li> <b>Track 2: Multiview Video Frame Synthesis</b></li>          
               <p>This track aims to synthesize intermediate frames from a sparse set of input frames in multiview videos, along with camera intrinsic and extrinsic parameters and additional segmentation maps and depth maps, supporting the multiview gaming solution of transferring part of multiview frames with assistive information using reduced bits and generating the remaining frames on client side. 
               </p>
@@ -197,18 +200,19 @@
                 For each set of sequences, a subset of multiview frames will be randomly selected as inputs, and the task is to synthesis the remaining frames. 
               </p>
               <p>
-                Algorithms will be evaluated based on 4 objective quality metrics: PSNR and SSIM to measure pixel-level distortion, LPIPS and FID to measure perceptual quality. The amount of additional GBuffers used will also be considered (the more GBuffers used, the more bits consumed potentially). For example, if two algorithms have similar distortion and quality metrics, the less bits consumed the better.
+                Algorithms will be evaluated based on 4 objective metrics: PSNR and SSIM to measure pixel-level distortion, LPIPS and FID to measure perceptual quality. The amount of additional GBuffers used will also be considered (the more GBuffers used, the more bits consumed potentially). For example, if two algorithms have similar distortion and quality metrics, the less bits consumed the better.
               </p>
-                <p><b>Dataset download: TBD </b></p>
-                <p><b>Challenge result submission: TBD</b></p>  
+              <p><b>Dataset download:</b> <del>full training set (Baidu Netdisk) </del>; <del>mini training set (huggingface)</del>. <del>full test set (to be released later)</del> For each town, 2 sets of multiview sequences are randomly selected to form the mini dataset. <!--<a href="https://scholar.google.com/citations?user=VsGLu-QAAAAJ&hl=en">here</a> -->
+                <p><b>Code script:</b> with the dataset the organizers will provide scripts to assist data reading</p>
+                <p><b>Challenge result submission:</b> participants must upload the recovered HR RGB images for the test set through <del>link tbd</del> </p>
               </p>
             </ul>
   </p>
   <p>
-    Challenge Result Submission Deadline: 
+    Challenge Result Submission Deadline: September 8, 2024 11:59 pm PST
   </p>
   <p>
-    <b>Preliminary Test Results Release to Participants: TBD</b>
+    <b>Preliminary Test Results Release to Participants: September 20, 2024</b>
   </p>
 
   <br id="speakers" />
