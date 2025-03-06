@@ -1,799 +1,93 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <meta name="keywords" content="accv, workshop, accv-2024, accv2024, computer vision, machine learning, generative model, diffusion, LLM">
-
-  <link rel="shortcut icon" href="./img/icon.png">
-
-
-  <title>Rich Media with Generative AI</title>
-  <meta name="description" content="Workshop in Conjunction with ACCV 2024 ---">
-
-  <!--Open Graph Related Stuff-->
-  <meta property="og:title" content="Workshop on Rich Media with Generative AI"/>
-  <meta property="og:url" content=""/>
-  <meta property="og:description" content="Workshop in Conjunction with ACCV 2024"/>
-  <meta property="og:site_name" content="Workshop on Rich Media with Generative AI"/>
-  <meta property="og:image" content=""/>
-  <meta property="og:image:url" content=""/>
-
-  <!--Twitter Card Stuff-->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:creator" content="">
-  <meta name="twitter:title" content=""/>
-  <meta name="twitter:image" content="">
-  <meta name="twitter:url" content=""/>           
-  <meta name="twitter:description" content=""/>
-
-  <!-- CSS  -->
-  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/main.css" media="screen,projection">
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/ff6e9b10da.js" crossorigin="anonymous"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 3rd Workshop on Rich Media with Generative AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            background-size: cover;
+            color: #111;
+        }
+        header {
+            background-color: rgba(24, 86, 45, 0.9);
+            color: #f8f9fa;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(24, 86, 45, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #f8f9fa;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: rgba(220, 225, 228, 0.9);
+            color: #18562d;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: rgba(220, 225, 228, 0.9);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        h2 {
+            color: #003366;
+        }
+    </style>
 </head>
-
-  <body>
-
-
-    <!-- <div class="top-strip"></div> -->
-<div class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/"></a>
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <div class="navbar-collapse collapse" id="navbar-main">
-      <ul class="nav navbar-nav">
-        <li><a href="#syllabus">Syllabus</a></li>
-		<li><a href="#papers">Paper Submissions</a></li>
-    <li><a href="#challenges">Challenges</a></li>
-		<li><a href="#speakers">Speakers</a></li>
-    <li><a href="#talks">Schedule</a></li>
-    <li><a href="#paperlist">List of Papers</a></li>
-    <li><a href="#organizers">Orgnizers</a></li>
-      </ul>
-    </div>
-
-  </div>
-</div>
-
+<body>
+    <header>
+        <img src="ACM-MM-2025-Logo-final-06.webp" alt="Workshop Logo" style="position: absolute; top: 10px; left: 10px; height: 50px;">
+        The 3rd Workshop on Rich Media with Generative AI
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dates.html">Important Dates</a>
+        <a href="speakers.html">Invited Speakers</a>
+        <a href="papers.html">Papers</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="program.html">Program</a>
+        <a href="organizers.html">Organizers</a>
+    </nav>
     <div class="container">
-      <div class="page-content">
-          <p><br /></p>
-<div class="row">
-  <div class="col-xs-12">
-  <center><h2>ACCV 2024 Workshop on</h2></center>
-    <center><h1>Rich Media with Generative AI</h1></center>
-        <center><b>Date: </b>Monday 9 Dec 9:00 am - 5:00 pm (Vienam Time/GMT+7), 2024</center>
-        <center><b>Location: </b>Hanoi Vienam + Zoom</center>
-        <!-- <center>To obtain the Zoom link, kindly fill out this <a href="https://forms.gle/4m8E8vkmTJ4D8vQAA">Google form</a> (if you do not have a ACCV registration).</center> -->
-  </div>
-</div>
-
-<center>
-<br>
-<!-- <a>
-    <img width="300px" src="./img/cvpr_banner_homepage.svg" />
-</a> -->
-<!-- <br> -->
-<!-- <a> -->
-    <img src="./img/ACCV-Hanoi-Logo_Dk-Blue-1024x226.jpg" style="height:80px" />
-    <!-- <img src="./img/teaser.svg"> -->
-<!-- </a> -->
-</center>
-
-<!-- <br>
-<p style="color:red;text-align:center">
-<b> &#x1F4E2; &#x1F3A5; Check <a href="https://drive.google.com/">this Google drive link</a> for our tutorial slides and this <a href="https://www.youtube.com/">YouTube link</a> for the video recording.</b>
-</p> -->
-<br>
-
-<br id="syllabus"/>
-<h2><b style='color:brown;'>Overview</b></h2>
-<br/>
-    <p>
-    The goal of this workshop is to showcase the latest developments of generative AI for creating, editing, restoring, and compressing rich media, such as images, videos, neural radiance fields, and 3D scene properties. Generative AI models, such as GAN and diffusion models have enabled remarkable achievements in rich media from both academia research and industrial applications. For instance, cloud-based video gaming is a booming industry with an expected global market value of over $12 billion by 2025. Generative AI transforms the gaming industry by enabling anyone to build and design games without professional artistic and technical skills, empowering immeasurable market growth.
-  </p>
-
-  <p>
-    With the success of the 1st RichMediaGAI Workshop@WACV 2024, we expand the 2nd RichMediaGAI workshop@ACCV2024 by organizing competitions with industry-level data, soliciting paper submissions, and continuing to invite top-tier speakers from both industry and academia to fuse the synergy.
-  </p>
-  
-
-
-  <!--
-  <h2><b style='color:red;'>Updates</b></h2>
-  <p><b style='color:red;'>Training set available!</b></p>
-  <p><b style='color:red;'>Paper submission site open!</b></p>
-  <p><b style='color:red;'>Test set available!</b></p>
-  -->
-
-  <br id="important_dates"/>
-  <h2><b style='color:brown;'>Important Dates + Author Guidelines</b></h2>
-  <br/>
-      <p>
-       <b>Author Guidelines:</b> Formatting, Page Limits, Author Kits, and Submission Policies follow the <b><a href="https://accv2024.org/author-guidelines/">ACCV 2024 Author Guidelines</a></b>     
-    </p>
-    <p>
-      <table style="width:100%"> 
-        <tr>
-          <td><b>Challenges Data Available at:</b></td>
-          <td align="right"><b style='color: brown;'>August 6, 2024, 11:59 PM PST</b></td>
-        </tr>
-        <tr>
-          <td><b>Regular Paper Submission Deadline:</b></td>  
-          <td align="right"><b style='color: brown;'>Extented to September 27, 2024, 11:59 PM PST</b></td> 
-        </tr>
-        <tr>
-          <td><b>Challenges Results and Reports Submission Deadline:</b></td>
-          <td align="right"><b style='color: brown;'>Extended to October 04, 2024, 11:59 PM PST</b></td>  
-        </tr>
-        <tr>
-          <td><b>Submission Site:</b></td>
-          <td align="right"><b style='color: brown;'><a href="https://cmt3.research.microsoft.com/RichMediaGAI2024">CMT Submission Site</a></b></td>         
-        </tr>
-        <tr>
-          <td><b>Paper Review Back and Decision Notification:</b></td>
-          <td align="right"><b style='color: brown;'>October 4, 2024, 11:59 PM PST</b></td>        
-        </tr>
-        <tr>
-          <td><b>Challenges Results and Decision Notification:</b></td> 
-          <td align="right"><b style='color: brown;'>October 8, 2024, 11:59 PM PST</b></td>        
-        </tr>
-        <tr>
-          <td><b>Camera-Ready Deadline:</b></td> 
-          <td align="right"><b style='color: brown;'>October 10, 2024, 11:59 PM PST</b></td>
-        </tr>
-      </table>
-    </p>
-
-
-  <br id="papers"/>
-  <h2><b style='color:brown;'>1. Regular Paper Submissions</b></h2>
-  <br/>
-  <p>
-    Papers addressing topics related to image/video restoration, compression, enhancement, and manipulation, using generative AI technologies are welcome to submit. The topics include but are not limited to: 
+        <h2>Welcome to Rich Media with Generative AI at ACM Multimedia 2025</h2>
+        <p style="margin-bottom: 30px;">The goal of this workshop is to showcase the latest developments of generative AI (GAI) for creating, editing, restoring, and compressing rich media data, such as images, videos, and 3D contents. 
+          GAI models like VAEs, GANs and diffusion models have remarkable impacts in both academia research and industrial applications. For instance, GAI enables anyone to design and generate synthetic and 
+          realistic content without professional artistic and technical skills. This empowers immeasurable market growth for gaming and entertainment, and even more profound impacts to provide crucial simulated 
+          data for training embodied AI agents.</p>
+        <p style="margin-top: 30px; color: #003366;">Topics in this workshop include but are not limited to:</p>
+        <ul>
+            <li>Representation learning (i.e., tokenization) of rich media</li>
+            <li>Restoration and compression of rich media with generative priors</li>
+            <li>Control and interactive editing of rich media</li>
+            <li>3D geometry and material generation from 2D data</li>
+            <li>Efficient inference of GAI models</li>
+        </ul>
+        <p style="margin-top: 30px;">With the success of the 1st & 2nd RichMediaGAI Workshop at WACV24 & ACCV24, we expand the 3rd RichMediaGAI Workshop at ACMMM 2025 by hosting competitions with 4 distinct tracks using novel industry-level data, 
+           soliciting paper submissions, and inviting top-tier speakers from industry and academia to fuse the synergy.</p>
+           <div style="position: fixed; bottom: 10px; left: 10px; font-size: 0.8em; opacity: 0.2; transition: opacity 0.5s; text-align: left;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.2'">
+            <h2>Previous Events</h2>
             <ul>
-              <li> Restoration and enhancement of rich media with generative AI</li>
-              <li> Editing and manipulation of rich media with generative AI</li>
-              <li> Compression and codec design with generative AI</li>
-              <li> Modeling and rendering rich media with generative AI</li>
-              <li> Neural radiance fields with generative AI</li>
-              <li> Rich media creation and editing with large language models</li>
-              <li> Acceleration of generative AI models on edge devices</li>              
-              </li>
+                <li><a href="https://generative-media.github.io/">The 1st Workshop on Rich Media with Generative AI in WACV 2025</a></li>
+                <li><a href="https://richmediagai.github.io/">The 2nd Workshop on Rich Media with Generative AI in ACCV 2025</a></li>
             </ul>
-  </p>
-  <p><b>Author Guidelines:</b> Formatting, Page Limits, Author Kits, and Submission Policies follow the <b><a href="https://accv2024.org/author-guidelines/">ACCV 2024 Author Guidelines</a></b>
-  All papers must be uploaded to the submission site by the deadline. There is no rebuttal for this call. Reviews and paper decisions will be sent back to the authors on the date specified above. 
-   
-  
-<br id="challenges"/>
-<h2><b style='color:brown;'>2. Challenges</b></h2>
-<br/>
-<p>
-  <b><a href=./file/GameIR_CallforChallenge.pdf> Call for Participation</a> </b>
-</p>
-    <p>
-      Cloud gaming poses tremendous challenges for compression and transmission. To avoid delay and bandwidth overload, high-quality frames need to be heavily compressed with very low latency.
-      Traditional codecs like H.264/H.265/H.266 or recent neural video coding targeting natural videos generally do not perform well.      
-  </p>
-
-  <p>
-      Generative AI technologies, e.g., super-resolution, image synthesis and rendering, can largely alleviate the transmission issues. Server-side computation and transmission can be reduced by leveraging the computation power of client de- vices. For example, the server can render low-resolution (LR) frames to transmit, and high-resolution (HR) frames can be computed on client side. In multiview gaming, the server can render part of views to transmit, and the remaining views can be computed by client devices. Nvidia's Deep Learning Super Sampling (DLSS) has commercialized this idea, and one key factor of its success is the large-scale ground-truth LR-HR or multiview gaming data used for training.    
-  </p>
-  <p>
-    In comparison, the research community uses pseudo training data for many restoration tasks. For example, for super-resolution, the LR data is generated from the HR data by downsampling and adding degradation like noises and blurs. Such pseudo data do not match real gaming data. True LR gaming frames are high-quality, sharp and clear without noises or blurs. There are unnatural visual effects and object movements, but with limited motion blur, different from captured natural videos. We need ground-truth gaming data for effective training.
-  </p>  
-  <p>
-    In this competition, a large computer-synthesized ground-truth dataset is provided, targeting two different applications:
-            <ul>
-              <li> <b>Track 1: Super Resolution in Deferred Rendering</b></li>
-              <p>This track aims to restore HR images from LR images along with additional GBuffers during the deferred rendering stage (i.e., segmentation map, depth map), supporting the gaming solution of transferring LR images with assistive information using reduced bits and restoring HR images on client side. 
-              </p>
-              <p>
-                The dataset has 320 LR-HR paired sequences at 1440p and 720p. Each sequence has 60 frames, totalling 19200 LR-HR paired frames. 
-                The sequences are rendered by the open source CARLA simulator with the Unreal Engine.
-                The paired sequences capture 3D scenes from 8 different towns (20 static scenes and 20 dynamic scenes for each town).         
-                The corresponding paired segmentation maps and depth maps synchronize with the RGB images are also provided.     
-                Data collected from 7 towns form the training set, and data from the remaining 1 town form the test set. 
-              </p>
-              <p>
-                Given the LR RGB images (720p) and additional GBuffers as input, the task is to develop algorithms to recover the HR RGB images (1440p).                 
-              </p>
-              <p>Algorithms will be evaluated based on 4 objective quality metrics: PSNR and SSIM to measure pixel-level distortion, LPIPS and FID to measure perceptual quality.
-                 In detail, assume there are N methods, they will be ranked according to each metric, and a ranking score between [1,2N-1] will be given to each method (1st place 2N-1, 2nd place 2N-3, ..., last place 1). 
-                 The average ranking score of all 4 metrics will be used as the overall score to rank the N methods.
-                The amount of additional GBuffers used will also be considered (the more GBuffers used, the more bits consumed). 
-                For example, if two methods have similar overall score, the less bits consumed the better. </p>
-                <p><a href="https://huggingface.co/datasets/LLLebin/GAMEIR"><b style='color:brown;'>huggingface Download</b></a> includes the following:</p>
-                <ul>
-                  <li>
-                    <b>Mini training set</b>: For each paired video sequence, 5 paired frames are randomly selected to form the mini dataset.
-                  </li>
-                  <li><b>Full training set</b></li>
-                  <li>
-                    <b>Code scripts</b> to read data and compute evaluation metrics</b>
-                  </li>
-                </ul>
-                <p>
-                <p><b>Challenge result submission:</b> participants must submit the recovered HR RGB images for the test set to be evaluated.  
-                  The download link of the results should be provided by the deadline.</p>
-
-              <li> <b>Track 2: Multiview Video Frame Synthesis</b></li>          
-              <p>This track aims to synthesize intermediate frames from a sparse set of input frames in multiview videos, along with camera intrinsic and extrinsic parameters and additional segmentation maps and depth maps, supporting the multiview gaming solution of transferring part of multiview frames with assistive information using reduced bits and generating the remaining frames on client side. 
-              </p>
-              <p>
-                The dataset contains 160 sets of sequences rendered by CARLA simulator. Each set of sequences consists of static 3D scenes captured by six cameras mounted on the top of a car moving within one of the 8 towns. Each town has 20 sets of sequences and each sequence has 60 frames, totaling 57600 frames. 
-                The corresponding segmentation maps and depth maps synchronize with the RGB images are also provided.     
-              </p>                  
-              <p>
-                For each set of sequences, a subset of multiview frames will be randomly selected as inputs, and the task is to synthesis the remaining frames. 
-              </p>
-              <p>
-                Algorithms will be evaluated based on 4 objective metrics: PSNR and SSIM to measure pixel-level distortion, LPIPS and FID to measure perceptual quality. 
-                In detail, assume there are N methods, they will be ranked according to each metric, and a ranking score between [1,2N-1] will be given to each method (1st place 2N-1, 2nd place 2N-3, ..., last place 1). 
-                The average ranking score of all 4 metrics will be used as the overall score to rank the N methods.
-               The amount of additional GBuffers used will also be considered (the more GBuffers used, the more bits consumed). 
-               For example, if two methods have similar overall score, the less bits consumed the better.
-              </p>
-              <p><a href="https://huggingface.co/datasets/LLLebin/GAMEIR"><b style='color:brown;'>huggingface Download</b></a> includes the following:</p>
-              <ul>
-                <li>
-                  <b>Mini training set</b>: For each paired video sequence, 5 paired frames are randomly selected to form the mini dataset.
-                </li>
-                <li><b>Full training set</b></li>
-                <li>
-                  <b>Code scripts</b> to read data and compute evaluation metrics</b>
-                </li>
-              </ul>
-
-              <p><b>Challenge result submission:</b> participants must submit the synthesized RGB frames for the test set to be evaluated.
-                The download link of the results should be provided by the deadline.</p>
-              </p>
-            </ul>
-  </p>
-
-  <p>
-    The winners will be announced at the RichMediaGAI workshop, and the top 3 non-corporate winners of each track will be rewarded with <b>1st $2000, 2nd $1000, 3rd $500</b>. 
-    The winners are invited to submit a paper to the RichMediaGAI workshop through the paper submission system. 
-    For the paper to be accepted, each paper must be a self-contained description of the method, and be detailed enough to reproduce the results.
-    The paper submission must follow the <b><a href="https://accv2024.org/author-guidelines/">ACCV 2024 Author Guidelines</a></b> . 
-  </p>
-
-  <br id="speakers" />
-  <br>
-  <br>
-  <br>
-  
-  
-  <div class="row">
-    <div class="col-xs-12">
-      <h2><b style='color:brown;'>3. Invited Talks</b></h2>
-    </div>
-  </div>  
-  
-  
-  <div class="row speaker" id="cl">
-    <div class="col-sm-3 speaker-pic">
-      <a href="https://www.mmlab-ntu.com/person/ccloy/">
-        <img class="people-pic" src="./img/people/ccloy.jpg" />
-      </a>
-      <div class="people-name">
-        <a href="https://www.mmlab-ntu.com/person/ccloy/">Chen Change Loy</a>
-        <h6>Nanyang Technological University</h6>
-      </div>
-    </div>
-    <div class="col-md-9">
-      <p class="speaker-bio">
-        Chen Change Loy is a President's Chair Professor with the College of Computing and Data Science, Nanyang Technological University, Singapore.
-         He is the Lab Director of MMLab@NTU and Co-associate Director of S-Lab. He received his Ph.D. (2010) in Computer Science from the Queen Mary 
-         University of London. Prior to joining NTU, he served as a Research Assistant Professor at the MMLab of The Chinese University of Hong Kong, 
-         from 2013 to 2018. His research interests include computer vision and deep learning with a focus on image/video restoration and enhancement, 
-         generative tasks, and representation learning. He was on the editorial board of IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 
-         from 2019 to 2024. He currently serves as an Associate Editor for the International Journal of Computer Vision (IJCV) and Computer Vision and Image 
-         Understanding (CVIU). He also serves/served as an Area Chair of top conferences such as ICCV, CVPR, ECCV, ICLR, and NeurIPS. He will serve as the Program 
-         Co-Chair of CVPR 2026. He is a senior member of IEEE.        
-      </p>
-    </div>
-  </div>
-
-    <div class="row speaker" id="dt">
-      <div class="col-sm-3 speaker-pic">
-        <a href="https://scholar.google.com/citations?user=VsGLu-QAAAAJ&hl=en">
-          <img class="people-pic" src="./img/people/dongtian.jpeg" />
-        </a>
-        <div class="people-name">
-          <a href="https://scholar.google.com/citations?user=VsGLu-QAAAAJ&hl=en">Dong Tian</a> 
-          <a href="https://twitter.com/chenhsuan_lin"><img src="./img/Twitter_Social_Icon_Rounded_Square_Color.png" /></a>
-          <h6>InterDigital</h6>
         </div>
-      </div>
-      <div class="col-md-9">
-        <p class="speaker-bio">
-          Dong Tian is a Senior Director with InterDigital, Inc. He has been actively contributing to MPEG industry standards and academic communities for 20+ years. 
-          Prior to InterDigital, Inc. He holds 30+ U.S.-granted patents and 50+ recent publications in top-tier journals/transactions and conferences. 
-          His research interests include image processing, 3D video, point cloud processing, and deep learning. 
-          He serves as the Chair of MPEG-AI, MPEG 3DGH on AI-Based Graphic Coding since 2021, and MSA TC from 2023 to 2025, and
-          a General Co-Chair of MMSP'20 and MMSP'21.
-        </p>
-      </div>
     </div>
-
-  <div class="row speaker" id="yw">
-    <div class="col-sm-3 speaker-pic">
-      <a href="https://web.northeastern.edu/yanzhiwang/">
-        <img class="people-pic" src="./img/people/Yanzhi_Wang_1400.jpg" />
-      </a>
-      <div class="people-name">
-        <a href="https://web.northeastern.edu/yanzhiwang/">Yanzhi Wang</a>
-        <h6>Northeastern Univeristy</h6>
-      </div>
-    </div>
-    <div class="col-md-9">
-      <p class="speaker-bio">
-      Yanzhi Wang is currently an associate professor and faculty fellow at Dept. of ECE at Northeastern University, Boston, MA. 
-      His research interests focus on model compression and platform-specific acceleration of deep learning applications. 
-      His work has been published broadly in top conference and journal venues 
-      (e.g., DAC, ICCAD, ASPLOS, ISCA, MICRO, HPCA, PLDI, ICS, PACT, ISSCC, AAAI, ICML, NeurIPS, CVPR, ICLR, IJCAI, 
-      ECCV, ICDM, ACM MM, FPGA, LCTES, CCS, VLDB, PACT, ICDCS, RTAS, Infocom, C-ACM, JSSC, TComputer, TCAS-I, TCAD, TCAS-I, JSAC, 
-      TNNLS, etc.). He has received six Best Paper and Top Paper Awards, 
-      and one Communications of the ACM cover featured article. He has another 13 Best Paper Nominations and four Popular Paper Awards. 
-      He has received the U.S. Army Young Investigator Program Award (YIP), IEEE TC-SDM Early Career Award, APSIPA Distinguished 
-      Leader Award, Massachusetts Acorn Innovation Award, Martin Essigmann Excellence in Teaching Award, Massachusetts Acorn Innovation Award,
-       Ming Hsieh Scholar Award, and other research awards from Google, MathWorks, etc. 
-      </p>
-    </div>
-  </div>  
-  
-  <div class="row speaker" id="tx">
-    <div class="col-sm-3 speaker-pic">
-      <a href="https://tianfan.info/">
-        <img class="people-pic" src="./img/people/xue_tianfan.jpg" />
-      </a>
-      <div class="people-name">
-        <a href="https://tianfan.info/">Tianfan Xue</a>
-        <h6>City University of Hong Kong</h6>
-      </div>
-    </div>
-    <div class="col-md-9">
-      <p class="speaker-bio">
-      Prof. Tianfan Xue is a Vice-Chancellor Assistant Professor at the Multimedia Lab (mmlab) in the Department of Information Engineering at the Chinese University 
-      of Hong Kong (CUHK). Prior to this, he worked in the Computational Photography Team at Google Research for over five years. He received his Ph.D. degree from 
-      the Computer Science and Artificial Intelligence Laboratory (CSAIL) at the Massachusetts Institute of Technology (MIT) in 2017. He also holds an M.Phil. 
-      degree from CUHK, obtained in 2011, and a Bachelor's degree from Tsinghua University. His research focuses on computational photography, 3D reconstruction, 
-      and generation. The anti-reflection technology he investigated is utilized by Google Photoscan, which boasts over 10 million users. The fast bilateral 
-      learning technique he researched has been integrated into the Google Tensor Chip. His recent work on bilateral based 3D reconstruction has won SIGGRAPH 
-      Honorable mention 2024. He also served as an area chair for WACV, CVPR, NeurIPS and ACM MM.
-      </p>
-    </div>
-  </div>
-  
-  <div class="row speaker" id="tx">
-    <div class="col-sm-3 speaker-pic">
-      <a href="https://cde.nus.edu.sg/ece/staff/shou-zheng-mike/">
-        <img class="people-pic" src="./img/people/zhengshou.jpg" />
-      </a>
-      <div class="people-name">
-        <a href="https://cde.nus.edu.sg/ece/staff/shou-zheng-mike/">Mike Zheng Shou</a>
-        <h6>National University of Sigapore</h6>
-      </div>
-    </div>
-    <div class="col-md-9">
-      <p class="speaker-bio">
-        Mike Z. Shou is an Assistant Professor at NUS. His research focuses on Computer Vision and Deep Learning, 
-        with an emphasis on developing intelligent system for video understanding and creation. 
-        Mike was awarded Wei Family Private Foundation Fellowship from 2014 to 2017. 
-        Mike received the best student paper nomination at CVPR2017. His team won the first place in the International Challenge on Activity Recognition (ActivityNet) 2017.
-        
-        Having won the Singapore NRF Fellowship award for his proposal tilted 
-        “Towards Next-generation Video Intelligence: Training Machines to Understand Actions and Complex Events“ 
-        which carries a research grant that provides early career researchers to carry out independent research locally. 
-        Mike is looking forward to developing new deep learning methods to allow machines to understand actions and complex events in videos 
-        -- this can power many applications such as perception system for self-driving car, caring-robot for the elderly, smart CCTV cameras, 
-        social media recommendation system, intelligent video creation tool for journalists and filmmakers, to name a few.      
-      </p>
-    </div>
-  </div>
-
-  <div class="row speaker" id="jh">
-    <div class="col-sm-3 speaker-pic">
-      <a href="https://scholar.google.com/citations?user=xrND8B8AAAAJ&hl=en">
-        <img class="people-pic" src="./img/people/junfeng.png" />
-      </a>
-      <div class="people-name">
-        <a href="https://scholar.google.com/citations?user=xrND8B8AAAAJ&hl=en">Junfeng He</a> 
-        <h6>Google Research</h6>
-      </div>
-    </div>
-    <div class="col-md-9">
-      <p class="speaker-bio">
-      Junfeng He is a tech lead and research scientist in Gogoal Research. He got his bachelor and master degree from Tsinghua Univeristy and PhD from Columbia University.
-      His full publication list can be found in gogole scholar page. 
-      He has about 20 years research expriences on image retrieval and classification, image generation/editing and their detection, ranking, large scale (approximate) machine learing etc.
-      His current research interests include the intersection of AIGC and user modeling, as well as post-training for generative models, and the intersection of computer vision and human vision/perception.
-      </p>
-    </div>
-  </div>
-
-
-  
-<br id="talks" />
-<br>
-<br>
-
-<div class="row">
-  <div class="col-xs-12">
-    <h2><b style='color:brown;'>4. Program Schedule</b></h2>
-     <p><font color="#76b900"><b>Hover over the titles to view the abstracts of each talk.</b></font></p>
-     <table class="table schedule" style="border:none !important;">
-      <thead class="thead-light">
-        <tr>
-        <th>Title</th>
-        <th>Speaker</th>
-        <th>Slides</th>
-<!--       <th>Video</th>--> 
-        <th>Time&nbsp;&nbsp;&nbsp;</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-            <td>Opening Remarks</td>
-            <td> </td>
-            <td> </td>
-            <td>9:00 - 9:05</td>
-        </tr>
-
-        <tr>
-          <td>
-          <div class="hover-text">
-              Talk: Artificial Intelligence and Compression - The Initiative and Beyond
-              <div class="hidden-info">
-                <p>Artificial intelligence has been booming in the past few years thanks to its success in a broad range of applications, from language to vision. 
-                  Signal compression, especially visual compression, on the other hand, has been flourishing and has enabled numerous applications. In this talk, 
-                  the connection between deep learning and compression will be analyzed and promoted. The initiative behind may lead to more trustable AI technologies 
-                  and new compression systems. A summary will be given on elementary learning technologies for image/video/point clouds. In addition, the specific 
-                  challenges will be discussed when applying deep learning for compression</p>
-                <p></p>
-              </div>
-          </div>
-          </td>
-          <td><a href="https://scholar.google.com/citations?user=VsGLu-QAAAAJ&hl=en">Dong Tian</a></td>
-<!--            <td><a href="https://drive.google.com/file/d/1lTfwd2iUwgFqyW-iqWBs2Gl4ajLjtWPK/view?usp=sharing">Link</a></td> -->
-          <td>-- </td>
-          <td>9:05 - 9:50</td>
-      </tr>
-
-        <tr>
-          <td>
-            <div class="hover-text">
-              Talk: OminiX: Towards unified library and acceleration framework for generative AI models on different hardware platforms
-              <div class="hidden-info">
-                <p>In the generative AI era, general users need to apply different base models, finetuned checkpoints, and LoRAs. Also the data privacy and real-time 
-                  requirement will favor on-device, local deployment of large-scale generative AI models. It is desirable to develop a "plug-and-play" framework such 
-                  that users can download any generative AI model, click and run on their own device. This poses significant challenge to the current AI deployment 
-                  frameworks, which are typically time-consuming and requires human expertise of hardware and code generation. We present our effort of OminiX, 
-                  which is a first step towards unified library and acceleartion of generative AI models across various hardware platforms. Integrating our unique 
-                  front-end library and back-end instantaneous acceleration techniques, which will be open-source soon, we show capability of plug-and-play deployment 
-                  and state-of-the-art acceleration of various generative AI models, starting from image generation, large language models, multi-model language models, 
-                  speech generation and voice cloning, real-time chatting engine, real-time translation, video generation, real-time avatar, to name a few. This can be 
-                  achieved without server, just on everyone's own platform.</p>
-              </div>
-          </div>
-          </td>
-          <td><a href="https://web.northeastern.edu/yanzhiwang/">Yanzhi Wang</a></td>
-<!--           <td><a href="https://drive.google.com/file/d/1KBbtMVGuOtkQILLIzA5uEDcKYwtzQU0G/view?usp=sharing">Link</a></td>--> 
-          <td>-- </td>
-          <td>9:50 - 10:35</td>
-      </tr>
-
-
-        <tr>
-          <td>Coffee Break</td>
-          <td> </td>
-          <td></td>
-          <td>10:35 - 10:50</td>
-        </tr>
-
-        <tr>
-          <td>
-          <div class="hover-text">
-          Talk: User modeling for better AIGC and content design
-        <div class="hidden-info">
-                <p>Abstract TBD</p>
-              </div>
-              </div>
-          </td>
-          <td><a href="https://scholar.google.com/citations?user=xrND8B8AAAAJ&hl=en">Junfeng He</a></td>
-<!--           <td><a href="https://drive.google.com/file/d/1KBbtMVGuOtkQILLIzA5uEDcKYwtzQU0G/view?usp=sharing">Link</a></td>--> 
-          <td>--</td>
-          <td>10:50 - 11:35</td>
-      </tr>
-
-        <tr>
-          <td>Lunch Break</td>
-          <td> </td>
-          <td> </td>
-          <td>11:35 - 1:20</td>
-        </tr>
-
-        <tr>
-          <td>
-            <div class="hover-text">
-              Talk: Improving Generalization in Image Restoration via 'Unconventional' Losses
-              <div class="hidden-info">
-                <p>In this talk, we explore strategies to enhance the generalization of image restoration and enhancement methods, focusing on the use of 'unconventional' 
-                  losses. Traditional deep learning-based image restoration techniques often struggle with real-world scenarios due to domain gaps between synthetic and 
-                  real-world data. We will discuss two new approaches that address this challenge. The first approach uses Contrastive Language-Image Pre-Training (CLIP) 
-                  for unsupervised backlit image enhancement, employing a prompt learning framework to optimize the enhancement network. The second approach leverages a 
-                  novel domain adaptation strategy in the noise-space using diffusion models, incorporating contrastive learning to align restored images to a clean 
-                  distribution. By integrating these "unconventional" loss functions, we demonstrate significant improvements in the visual quality and generalization 
-                  ability of image restoration and enhancement tasks.</p>
-              </div>
-            </div>
-          </td>
-          <td><a href="https://www.mmlab-ntu.com/person/ccloy/">Chen Change Loy</a></td>
-<!--            <td><a href="https://drive.google.com/file/d/1KBbtMVGuOtkQILLIzA5uEDcKYwtzQU0G/view?usp=sharing">Link</a></td>-->
-          <td>-- </td>
-          <td>1:20 - 2:05</td>
-      </tr>
-
-        <tr>
-            <td>
-              <div class="hover-text">
-                Talk: How generative AI helps the traditional computational photography
-                <div class="hidden-info">
-                  <p>Generative AI techniques, including text-to-image generation, text-to-video generation, and large language models, have experienced tremendous 
-                    improvements in the last few years. Generative AI can now produce realistic images, videos, and texts that are sometimes difficult to differentiate 
-                    from real ones. However, the majority of discussions about Generative AI focuses on content creation. In this talk, I will discuss another recent 
-                    and evolving direction: how Generative AI can aid computational photography. In particular, with the help of Generative AI, many long-standing 
-                    problems in computational photography have the potential for dramatic improvements. I will mainly cover three aspects: First, how Generative AI 
-                    can dramatically improve the quality of image processing. Second, how Generative AI can change the entire camera pipeline. Third, how Generative 
-                    AI assists in image quality assessment.  </p>
-                </div>
-            </div>
-            </td>
-            <td><a href="https://tianfan.info/">Tianfan Xue</a></td>
-<!--            <td><a href="https://drive.google.com/file/d/1KBbtMVGuOtkQILLIzA5uEDcKYwtzQU0G/view?usp=sharing">Link</a></td>-->
-            <td> </td>
-            <td>2:05 - 2:50</td>
-        </tr>
-
-        <tr>    
-          <td>
-            <div class="hover-text">
-              Talk: Show-o: One Single Transformer to Unify Multimodal Understanding and Generation
-              <div class="hidden-info">
-                <p>Exciting models have been developed in multimodal video understanding and generation, such as video LLM and video diffusion model. 
-                  One emerging pathway to the ultimate intelligence is to create one single foundation model that can do both understanding and generation. 
-                  After all, humans only use one brain to do both tasks. Towards such unification, recent attempts employ a base language model for multimodal 
-                  understanding but require an additional pre-trained diffusion model for visual generation, which still remain as two separate components. 
-                  In this work, we present Show-o, one single transformer that handles both multimodal understanding and generation. Unlike fully autoregressive 
-                  models, Show-o is the first to unify autoregressive and discrete diffusion modeling, flexibly supporting a wide range of vision-language tasks 
-                  including visual question-answering, text-to-image generation, text-guided inpainting/extrapolation, and mixed-modality generation of any 
-                  input/output format, all within one single 1.3B transformer. Across various benchmarks, Show-o demonstrates comparable or superior performance, 
-                  shedding light for building the next-generation video foundation model</p>
-              </div>
-          </div>
-          </td>
-          <td><a href="https://cde.nus.edu.sg/ece/staff/shou-zheng-mike/">Mike Zheng Shou</a></td>
-<!--           <td><a href="https://drive.google.com/file/d/1KBbtMVGuOtkQILLIzA5uEDcKYwtzQU0G/view?usp=sharing">Link</a></td>--> 
-         <td>--</td>
-        <td>2:50 - 3:35</td>
-      </tr>
-
-      <tr>
-        <td>Coffee Break</td>
-        <td> </td>
-        <td></td>
-        <td>3:35 - 3:50</td>
-      </tr>
-
-        <tr>
-          <td>
-            <div class="hover-text">
-                Challenge Report
-              <div class="hidden-info">
-                <p></p>
-              </div>
-          </div>
-          </td>
-          <td><a href="https://scholar.google.com/citations?user=XxKgdDQAAAAJ&hl=en">Lebin Zhou</a></td>
-          <td>--</td>
-          <td>3:50 - 4:50</td>
-      </tr>
-      <tr>
-        <td>Lighting Session</td>
-        <td>Poster presentors</td>
-        <td>--</td>
-        <td>4:50 - 5:00</td>
-    </tr>
-    <tr>
-            <td>Conclusions, Open Problems and Final Remarks</td>
-            <td>ALL</td>
-            <td></td>
-            <td></td>
-        </tr>
-
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<br id="paperlist" />
-<br>
-<br>
-
-<div class="row">
-  <div class="col-xs-12">
-    <h2><b style='color:brown;'>5. List of Papers</b></h2>
-<p>
-<table>
-<tr>
-  <td>Lebin Zhou, Kun Han, Nam Ling, Wei Wang, Wei Jiang</td>
-  <td><b>GameIR: A Large-Scale Synthesized Ground-Truth Dataset for Image Restoration over Gaming Content</b></td>
-  <td><a href="./file/poster_GameIR.pdf">Poster</a></td>         
-</tr>
-  <tr>
-  <td>Ryuta Yamakura, Keiji Yanai</td>
-  <td><b>Vector Logo Image Synthesis Using Differentiable Renderer</b></td>
-  <td><a href="./file/241210yamakura-r_poster.pdf">Poster</a></td>         
-</tr>
-  <tr>
-  <td>Oliverio Nathanael, Jonathan Samuel Lumentut, Edbert Valencio Angky, Nicholas Hans Muliawan, Felix I Kurniadi, Alfi Yusrotis Zakiyyah, Jeklin Harefa</td>
-  <td><b>HYPNOS : Highly Precise Foreground-focused Diffusion Finetuning for Inanimate Objects</b></td>
-  <td><a href="./file/HypnosPoster_ACCV2024_V3.pdf">Poster</a></td>         
-</tr>
-  <tr>
-  <td>Sanhita Pathak, Vinay Kaushik, Brejesh Lall</td>
-  <td><b>GraVITON: Graph based garment warping with attention guided inversion for Virtual-tryon</b></td>
-  <td><a href="./file/Poster_GRAVITON.pdf">Poster</a></td>         
-</tr>
-  <tr>
-  <td>Lebin Zhou, Wei Wang, Wei Jiang</td>
-  <td><b>Image and Video Compression using Generative Sparse Representation with Fidelity Controls</b></td>
-  <td><a href="./file/poster_RichMediaGAI_SVRCompression.pdf">Poster</a></td>         
-</tr>
-</table>
-</p>
-</div>
-</div>
-
-
-<br id="organizers" />
-<br>
-<br>
-<br>
-
-<div class="row">
-  <div class="col-xs-12">
-    <h2><b style='color:brown;'>6. Organizers</b></h2>
-    <br>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-
-
-  <div class="row">
-    <div class="col-xs-4" id="wj">
-      <center>
-      <a href="https://scholar.google.com/citations?user=c8koDJgAAAAJ">
-        <img class="people-pic" src="./img/people/wei_jiang.jpg" />
-      </a>
-      <div class="people-name">
-        <a href="https://scholar.google.com/citations?user=c8koDJgAAAAJ">Wei Jiang</a>
-        <h6>Futurewei Technologies</h6>
-      </div>
-    </center>
-  </div>    
-
-    <div class="col-xs-4" id="zx">
-      <center>
-      <a href="https://scholar.google.com/citations?user=XxKgdDQAAAAJ&hl=en">
-        <img class="people-pic" src="./img/people/lebinzhou.png" />
-      </a>
-      <div class="people-name">
-         <a href="https://scholar.google.com/citations?user=XxKgdDQAAAAJ&hl=en">Lebin Zhou</a>
-        <h6>Santa Clara University</h6>
-      </div>
-    </center>
-    </div>
-
-    <div class="col-xs-4" id="jw">
-      <center>
-      <a href="https://www.gujinwei.org">
-        <img class="people-pic" src="./img/people/jwgu5.jpg" />
-      </a>
-      <div class="people-name">
-        <a href="https://www.gujinwei.org">Jinwei Gu</a>
-        <h6>Chinese Univeristy of Hong Kong</h6>
-      </div>
-      </center>
-    </div>
-  </div>
-<br/>
-
-    <div class="row">
-      <div class="col-xs-4" id="yt">
-        <center>
-        <a href="https://scholar.google.com/citations?user=GdIW8DUAAAAJ&hl=en">
-          <img class="people-pic" src="./img/people/kunhan.jpeg" />
-        </a>
-        <div class="people-name">
-          <a href="https://scholar.google.com/citations?user=GdIW8DUAAAAJ&hl=en">Kun Han</a>
-          <h6>University of California Irvine</h6>
-        </div>
-      </center>
-      </div>
-      <div class="col-xs-4" id="tf">
-      <center>
-      <a href="https://scholar.google.com/citations?user=Xk7PH88AAAAJ&hl=en">
-        <img class="people-pic" src="./img/people/zijiangyang.jpeg" />
-      </a>
-      <div class="people-name">
-        <a href="https://scholar.google.com/citations?user=Xk7PH88AAAAJ&hl=en">Zijiang (James) Yang</a>
-        <h6>Guard Strike</h6>
-      </div>
-    </center>
-    </div>
-  </div>
-
-
-<br />
-
-</div>
-<p><b>Contacts</b></p>
-<p>Dataset related questions: Lebin Zhou</p>
-<p>Paper related and other general questions: <a href="mailto:wjiang@futurewei.com">Wei Jiang</a>, Jinwei Gu</p>
-</div>
-
-      </div>
-    </div>
-
-
-<br>
-<br>
-<br>
-
-<footer class="fixed-footer">
-        <div class="container">
-            © 2024 Wei Jiang. Template by <a href="https://cvpr2022-tutorial-diffusion-models.github.io/" class="external">Arash Vahdat</a> &#x2192; <a href="https://nvlabs.github.io/eccv2020-limited-labels-data-tutorial/" class="external">Shalini De Mello</a> &#x2192; <a href="https://visualdialog.org/" class="external">https://visualdialog.org/</a>.
-        </div>
-    </footer>
-
-
-
-
-<!-- 
-    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script> -->
-     <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-<!--     <script>
-    function showModal() {
-        document.getElementById("infoModal").style.display = "block";
-    }
-
-    function hideModal() {
-        document.getElementById("infoModal").style.display = "none";
-    }
-  </script> -->
-
-  </body>
-
+</body>
 </html>
