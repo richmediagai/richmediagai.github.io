@@ -109,7 +109,8 @@
         <h3>Track 3: Novel View Synthesis & Super-Resolution</h3>
         <p style="text-align: justify; text-align-last: left;">A combination of
             track 1 & 2 to support the solution of transferring part of multi-view LR frames and
-            generating all HR frames by client. Track 3 uses the same videos as track 2.</p>
+            generating all HR frames by client. Track 3 also uses the 600 sets of videos with static scenes in  M<sup>3</sup>VIR_MR same as Track 2, 
+            but with all 3 different resolutions to support 2x and 3x SR</p>
 
         <h3>Evaluation</h3>            
         <p style="text-align: justify; text-align-last: left;">
@@ -139,9 +140,10 @@
 
         
         <h2>Datasets</h2>
-        <p>Two datasets will be used for the challenges, each with a training and test partition. 
-            Due to the large size, a small mini training set will be provided for each dataset, and participants can optionally use the full training dataset to 
-            enhance their performance.</p>
+        <p>Two datasets will be used for the challenges, each with a training (80 scenes) and test (20 scenes) partition. 
+            Due to the large size, a small mini training set will be provided for each track, and participants can optionally use the full training dataset to 
+            enhance their performance. Training set will be released in 4 batches, 20 scenes in each batch, scheduled around April 5, April 19, May 03, and May 17. 
+            Test set will be relased in June. </p>
         
         <h3>M<sup>3</sup>VIR_MR</h3>
         <p style="text-align: justify; text-align-last: left;">For each of the 100 scenes, 3 sets of multi-modal 
@@ -153,27 +155,48 @@
             In total, M<sup>3</sup>VIR_MR has 54000 data samples from 1800 sets of videos, each data sample
             consisting of matching RGB images, segmentation maps and depth maps at 3 different
             resolutions. The corresponding intrinsic and 6-DoF extrinsic camera parameters for
-            each frame are also provided. One data sample is shown below.</p>
+            each frame are also provided. One data sample is shown below. 
+            80 scenes are used for training and 20 scenes are used for testing.</p>
             
             <img src="dataset/M3VIR_MR_example.png" alt="Dataset1 example " style="display: block; margin: auto; max-width: 100%; border-radius: 10px;">            
             
-            <p><strong>Mini training set:</strong> <a href="#">[To be provided]</a></p>
-            <p><strong>Full training set:</strong> <a href="#">[To be provided]</a></p>
-            <p><strong>Test set:</strong> <a href="#">[To be provided]</a></p>
+            <p style="text-align: justify; text-align-last: left;">For track 1, the mini training set comprises randomly sampled 5% data samples 
+                (2160 data samples from 43200 training data samples), each data sample consisting of matching RGB images, depth and segmentaion maps at 3 resolutions.
+            </p>            
+            <p><strong>Track 1: Full training set:</strong> <a href="#">[To be provided]</a></p>
+            <p><strong>Track 1: Mini training set:</strong> <a href="#">[To be provided]</a></p>
+
+            <p style="text-align: justify; text-align-last: left;">For track 1, only 600 videos corresponding to static scene 
+                with moving camera at 1080p resolution is used. The mini training set comprises 1/3 data samples (4800 from 14400 training data samples), 
+                where only the first 10 frames of each video is used. Each data sample consisting of matching RGB images, depth and segmentaion maps at 1080p.</p>            
+            <p><strong>Track 2: Full training set:</strong> <a href="#">[To be provided]</a></p>
+            <p><strong>Track 2: Mini training set:</strong> <a href="#">[To be provided]</a></p>
+
+            <p style="text-align: justify; text-align-last: left;">For track 3, only 600 videos corresponding to static scene 
+                with moving camera is used. The mini training set comprises 1/6 data samples (2400 from 14400 training data samples), 
+                where only the first 5 frames of each video is used. Each data sample consisting of matching RGB images, depth and segmentaion maps at 3 resolutions.</p>            
+            <p><strong>Track 3: Full training set:</strong> <a href="#">[To be provided]</a></p>
+            <p><strong>Track 3: Mini training set:</strong> <a href="#">[To be provided]</a></p>
             
 
         <h3>M<sup>3</sup>VIR_MS</h3>
-        <p style="text-align: justify; text-align-last: left;">The multi-style M3VIR_MS dataset aims to facilitate research on controlled video generation. From the 54000 data samples in the above M<sup>3</sup>VIR_MR, 
+        <p style="text-align: justify; text-align-last: left;">The multi-style M3VIR_MS dataset aims to facilitate research on controlled video generation. From the 
+            54000 data samples in the above M<sup>3</sup>VIR_MR, 
             videos with 1920x1080 resolution are taken out, and for each video, a cartoon-style video and a metallic-style video are rendered with the same geometry. 
             That is, M<sup>3</sup>VIR_MS contains 54000 data samples, each comprising 3 videos having matching geometry at the frame level and with 3 styles, photo-realistic, 
-            cartoon, and metallic, as well as the corresponding segmentation map, depth map, and camera intrinsic and extrinsic parameters. An example is shown below.</p>
+            cartoon, and metallic, as well as the corresponding segmentation map, depth map, and camera intrinsic and extrinsic parameters. An example is shown below. 
+            Same as M<sup>3</sup>VIR_MR, 80 scenes are used for training and 20 scenes are used for testing.</p>
             
             <img src="dataset/M3VIR_MS_example.png" alt="Dataset2 example" style="display: block; margin: auto; max-width: 100%; border-radius: 10px;">            
             
-            <p><strong>Mini training set:</strong> <a href="#">[To be provided]</a></p>
+            <p style="text-align: justify; text-align-last: left;">For track 4, the mini training set comprises 1/6 data samples (7200 from 43200 training data samples), 
+                where only the first 5 frames of each video is used. Each data sample consisting of matching RGB images, depth and segmentaion maps with 3 styles.</p>            
             <p><strong>Full training set:</strong> <a href="#">[To be provided]</a></p>
-            <p><strong>Test set:</strong> <a href="#">[To be provided]</a></p>
+            <p><strong>Mini training set:</strong> <a href="#">[To be provided]</a></p>
                     
+
+        <p><strong>Test sets:</strong> <a href="#">[To be provided]</a></p>
+
     </div>
 </body>
 </html>
