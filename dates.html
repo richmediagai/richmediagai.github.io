@@ -22,6 +22,7 @@
         }
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             background-color: rgba(24, 86, 45, 0.9);
             position: sticky;
@@ -63,6 +64,27 @@
             background-color: #18562d;
             color: white;
         }
+        @media (max-width: 600px) {
+            header {
+                font-size: 16px;
+                padding: 10px;
+            }
+            nav a {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+            .container {
+                margin-top: 20px;
+                border-radius: 0;
+                padding: 15px;
+            }
+            table, th, td {
+                font-size: 14px;
+            }
+            th, td {
+                padding: 6px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -78,10 +100,12 @@
     </nav>
     <div class="container">
         <h2>Important Dates</h2>
+<!--     
         <p>We apologize for the expired OpenReview submission link. 
             The issue has now been resolved, and we are extending submission deadline 
             to July 25 for regular and fast-track papers. We also extend the submission deadline for
             challenge result and challenge paper to August 10 and August 13, respectively.</p>
+-->
         <table>
             <tr>
                 <th>Event</th>
@@ -89,41 +113,43 @@
             </tr>
             <tr>
                 <td>Regular Paper Submission Deadline</td>
-                <td>(extended) July 25, 2025</td>
+                <td> July 26, 2026</td>
             </tr>
             <tr>
                 <td>Challenge Paper Submission Deadline</td>
-                <td>(extended) August 10, 2025</td>
+                <td> August 9, 2026</td>
             </tr>
             <tr>
                 <td>Challenge Result Submission Deadline</td>
-                <td>(extened) August 13, 2025</td>
+                <td> August 9, 2026</td>
             </tr>
             <tr>
                 <td>Notification of Acceptance for Regular and Fast-Track papers</td>
-                <td>August 3, 2025</td>
+                <td>August 12, 2026</td>
             </tr>
             <tr>
                 <td>Notification of Acceptance for Challenge papers</td>
-                <td>August 10, 2025</td>
+                <td>August 12, 2026</td>
             </tr>
             <tr>
                 <td>Camera-Ready Submission for all papers </td>
-                <td>(as requred by MM Main conference) August 11, 2025</td>
+                <td>August 20, 2026 (same as MM Main conference Camera-Ready deadline)</td>
             </tr>
             <tr>
                 <td>Workshop Date</td>
-                <td>October 28, 2025</td>
+                <td>November 10 or 11, 2026</td>
             </tr>
         </table>
         <p>Challenge results may be submitted as supplementary material, accompanied by a paper-format report. 
             No source code is required. Please submit the generated images as the challenge results. 
         </p>
-        <p>For Tracks 2 and 3, you may choose your own training-test partition, i.e., x% frames in each test 
+
+<!--        <p>For Tracks 2 and 3, you may choose your own training-test partition, i.e., x% frames in each test 
             video for training, and (100-x)% remaining frames for testing. Preferably cross-validation and 
             multiple partition ratios should be tested to facilitate comprehensive performance 
             evaluation.
         </p>        
+-->        
     </div>
 </body>
 </html>

@@ -21,6 +21,7 @@
             }
             nav {
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
                 background-color: rgba(24, 86, 45, 0.9);
                 position: sticky;
@@ -66,6 +67,28 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+            }
+            @media (max-width: 600px) {
+                header {
+                    font-size: 16px;
+                    padding: 10px;
+                }
+                nav a {
+                    padding: 10px 12px;
+                    font-size: 14px;
+                }
+                .container {
+                    margin-top: 20px;
+                    border-radius: 0;
+                    padding: 15px;
+                }
+                .speaker {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .speaker img {
+                    margin-bottom: 10px;
+                }
             }
         </style>
     </head>
@@ -118,7 +141,7 @@
             <img src="people/JinweiGu.jpg" alt="Speaker 2">
             <div class="speaker-info">
                 <h3><a href="https://www.gujinwei.org/" target="_blank">Jinwei Gu</a></h3>
-                <p>Principal Research Scientist, Nvidia</p>
+                <p>Senior Manager and Principal Research Scientist, Nvidia</p>
                 <p>Adjunct Associate Professor, CUHK</p>
                 <p style="text-align: justify; text-align-last: left;">Dr. Jinwei Gu is currently a 
                     Principal Research Scientist at NVIDIA and an Adjunct Associate Professor at the 
@@ -143,34 +166,36 @@
         </div>
         
         <div class="speaker">
-            <img src="people/junfeng.png" alt="Speaker 3">
+            <img src="people/RogerioPhoto.jpg" alt="Speaker 3">
             <div class="speaker-info">
-                <h3><a href="https://scholar.google.com/citations?user=xrND8B8AAAAJ&hl=en" target="_blank">Junfeng He</a></h3>
-                <p>Reseach Scientist, Google</p>
-                <p style="text-align: justify; text-align-last: left;">Dr. Junfeng He is a tech lead and research scientist in Gogoal Research. 
-                    He got his bachelor and master degree from Tsinghua Univeristy and PhD from Columbia University.
-                    His full publication list can be found in gogole scholar page. 
-                    He has about 20 years research expriences on image retrieval and classification, image generation/editing and their detection, ranking, 
-                    large scale (approximate) machine learing etc.
-                    His current research interests include the intersection of AIGC and user modeling, 
-                    as well as post-training for generative models, and the intersection of computer vision and human vision/perception.
+                <h3><a href="https://www.rogerioferis.org/" target="_blank">Rogerio Feris</a></h3>
+                <p>Senior Research Manager and Principal Scientist, MIT-IBM Watson AI Lab</p>
+                <p style="text-align: justify; text-align-last: left;">Dr. Feris is a Senior Research Manager and Principal Scientist at the MIT–IBM Watson AI Lab. 
+                    His research focuses on computer vision, efficient multimodal learning, and scalable deployment of AI systems. 
+                    He has led large collaborative projects on sustainable and responsible AI, bridging academic research with real-world applications 
+                    in visual perception, generative models, and interactive media.
                     </p>
             </div>
         </div>
 
-
+        <!--
         <div class="speaker">
-            <img src="people/jinyang.jpg" alt="Speaker 4">
+            <img src="people/zhengshou.jpg" alt="Speaker 4">
             <div class="speaker-info">
-                <h3><a href="https://jinyangguo.github.io/" target="_blank">Jinyang Guo</a></h3>
+                <h3><a href="https://sites.google.com/view/showlab" target="_blank">Mike Zheng Shou</a></h3>
                 <p>Assistant Professor, Beihang University</p>
-                <p style="text-align: justify; text-align-last: left;">Jinyang Guo is an Assistant Professor at Institute of Artificual Intelligence, Beihang University. Before that, he obtained his PhD from the University of Sidney. 
-                    His current research interests include efficient methods for machine/deep learning, such as model sparsification, quantization, and distillation. He has published 
-                    more than 20 papers on top-tier conference and journals, such as IEEE TIP, CVPR, AAAI.
-                    </p>
+                <p style="text-align: justify; text-align-last: left;">Mike Shou is a tenure-track Assistant Professor (Presidential Young Professorship) 
+                    at National University of Singapore. He was a Research Scientist at Facebook AI in Bay Area. He obtained his Ph.D. 
+                    degree at Columbia University in the City of New York, working with Prof. Shih-Fu Chang. He received the Best Paper Finalist at CVPR'22 and CVPR'25, 
+                    Best Student Paper Nomination at CVPR'17, PREMIA Best Paper Award 2023, EgoVis Distinguished Paper Award 2022/23. 
+                    His team won the 1st place in the international challenges including ActivityNet 2017, EPIC-Kitchens 2022, Ego4D 2022 & 2023. 
+                    He regularly serves as Area Chair for top-tier artificial intelligence conferences including CVPR, ECCV, ICCV, ACM MM, and is an Associate Editor 
+                    for IEEE TPAMI. He is a Singapore Technologies Engineering Distinguished Professor and a Fellow of National Research Foundation Singapore. 
+                    He is on the Forbes 30 Under 30 Asia list.
+                </p>
             </div>
         </div>
-
+        -->        
     </div>
 </body>
 </html>

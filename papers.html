@@ -21,6 +21,7 @@
         }
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             background-color: rgba(24, 86, 45, 0.9);
             position: sticky;
@@ -48,6 +49,21 @@
         h2 {
             color: #003366;
         }
+        @media (max-width: 600px) {
+            header {
+                font-size: 16px;
+                padding: 10px;
+            }
+            nav a {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+            .container {
+                margin-top: 20px;
+                border-radius: 0;
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -62,17 +78,22 @@
         <a href="organizers.html">Organizers</a>
     </nav>
     <div class="container">
+        <h2>Submission Link: (Will be provided soon!)</h2><!-- <a href="https://openreview.net/group?id=acmmm.org/ACMMM/2026/Workshop/RichMediaGAI">OpenReview Paper Submission</a>-->       
+        <p>Please note that every author needs an OpenReview account for paper submission, and OpenReview's new profiles created without an institutional email 
+            will go through a moderation process that can take up to two weeks.</p>
+        
+
         <h2>Regular Paper Submissions</h2>
         <p>We invite submissions of high-quality papers addressing novel research in generative AI for rich media under Regular Paper Submissions, 
             including but not limited to:</p>
         <ul>
-            <li>AI-driven media generation, restoration, and enhancement</li>
-            <li>3D content generation using AI</li>
-            <li>AI-driven media compression and codec design</li>
-            <li>Editing and manipulation of rich media with generative AI</li>
-            <li>Multi-modal generative AI techniques</li>
-            <li>Rich media creation and editing with large language models</li>
-            <li>Acceleration of generative AI models</li>     
+            <li>Generative FVV: 3D/4D scene synthesis, dynamic NeRFs, 3D/4D Gaussian Splatting</li>
+            <li>Real-time neural rendering and interactive free-view navigation</li>
+            <li>Compression and streaming of neural/Gaussian scene representations</li>
+            <li>Video diffusion/transformers for multi-view, temporally coherent generation</li>
+            <li>Datasets, benchmarks, reproducibility for FVV generation/delivery</li>
+            <li>Evaluation: view consistency, temporal stability, bitrate/latency, QoE</li>
+            <li>Applications: AR/VR, digital humans, robotics/embodied AI, digital twins</li>     
         </ul>
         
         </ul>
@@ -81,29 +102,44 @@
             and findings from the workshop's challenges. These submissions should highlight technical contributions, benchmark results, and insights gained from participation.</p>
         
         <h2>Fast-Track Submissions</h2>
-        <p>In addition to the general submission guidelines, high-quality rejected submissions at ACM MM 25
+        <p>In addition to the general submission guidelines, high-quality rejected submissions at ACM MM 26
             may be submitted together with a supplementary package including the original reviews as well 
             as a statement on changes made to the paper. These materials will be checked by the TPC chairs, 
             and may be eligible for a fast-track review process.
         </p>
         
         <p>Accepted papers will be published in proceedings by Sheridan Publishing on behalf of ACM.</p>
-        <p>Papers must follow the official ACM Multimedia 2025 format. For details, 
-            please refer to the <a href="https://acmmm2025.org/call-for-papers/" target="_blank">ACM Multimedia 2025 Call for Papers</a>. 
+        <p>Papers must follow the official ACM Multimedia 2026 format. For details, 
+            please refer to the <a href="https://2026.acmmm.org/site/cfp-guidelines.html" target="_blank">ACM Multimedia 2026 Call for Technical Papers</a>. 
             Submissions should be anonymous for peer review and should not exceed 8 pages (excluding references).</p>
-        <p><strong>Submission Link:</strong> <a href="https://openreview.net/group?id=acmmm.org/ACMMM/2025/Workshop/RichMediaGAI">OpenReview Paper Submission</a></p>
-        <p>Please note that every author needs an OpenReview account for paper submission, and OpenReview's new profiles created without an institutional email 
-            will go through a moderation process that can take up to two weeks.</p>
         
-        <h2>Accepted Papers</h2>
+        <h2>Open Access Notice</h2>
+        <p>Important update on ACM's new Open Access publishing model for 2026 ACM Conferences!</p>
+        <p>Starting January 1, 2026, ACM will fully transition to Open Access. All ACM publications, including those from ACM-sponsored conferences, 
+            will be 100% Open Access. Authors will have two primary options for publishing Open Access articles with ACM: the ACM Open institutional 
+            model or by paying Article Processing Charges (APCs). With over 1,800 institutions already part of ACM Open, the majority of 
+            ACM-sponsored conference papers will not require APCs from authors or conferences (currently, around 70-75%).</p>
+        <p>Authors from institutions not participating in ACM Open will need to pay an APC to publish their papers, unless they qualify for a financial or 
+            discretionary waiver. To find out whether an APC applies to your article, please consult the list of participating institutions in ACM Open and 
+            review the APC Waivers and Discounts Policy . Keep in mind that waivers are rare and are granted based on specific criteria set by ACM.</p>
+
+        <p>Understanding that this change could present financial challenges, ACM has approved a temporary subsidy for 2026 to ease the transition and allow 
+            more time for institutions to join ACM Open. The subsidy will offer:</p>
+        <ur>
+            <li> $250 APC for ACM/SIG members</li>
+            <li>$350 APC for non-members</li>
+        </ur>
+        <p>This represents a 65% discount , funded directly by ACM. Authors are encouraged to help advocate for their institutions to join ACM Open during this transition period.
+        </p>       
+        
+
+
+<!--        <h2>Accepted Papers</h2>
         <ul>
             <li>SLMQuant: Benchmarking Small Language Model Quantization for Practical Deployment (Jiacheng Wang, Yejun Zeng, Jinyang Guo, Yuqing Ma, Aishan Liu, Xianglong Liu)</li>
-            <li>DCEdit: Dual-Level Controlled Image Editing via Precisely Localized Semantics (Yihan Hu, Jianing Peng, Yiheng Lin, Ting Liu, Xiaochao Qu, Luoqi Liu, Yao Zhao, Yunchao Wei)</li>
-            <li>Efficient and Accurate Post-Training Sparsification of Large Language Models with Proximal Operators (Pu Zhao, Dani Gunawan, Xuan Shen, Zheng Zhan, Xuehang Guo, Jun Liu, Zhenglun Kong, Yanzhi Wang, Gaowen Liu, Xue Lin)</li>
-            <li>M<sup>3</sup>VIR: A Large-Scale Multi-Modality Multi-View Synthesized Benchmark Dataset for Image Restoration and Content Creation (Yuanzhi Li, Lebin Zhou, Nam Ling, Zhenghao Chen, Wei Wang, Wei Jiang)</li>
-            <li>BlingDiff: High-Fidelity Virtual Jewelry Try-On with Detail-Optimized Diffusion (Yunfang Niu, Lingxiang Wu, Dong Yi, Lu Zhou, Jinqiao Wang)</li>
-            <li>Text-to-Image Generation Post-Training with Pixel-Space Loss (Christina Zhang, Simran Motwani, Matthew Yu, Ji Hou, Felix Juefei-Xu, Sam Tsai, Peter Vajda, Zijian He, Jialiang Wang)</li> 
         </ul>
+-->
+                
     </div>
 </body>
 </html>

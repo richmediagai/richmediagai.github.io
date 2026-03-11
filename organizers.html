@@ -21,6 +21,7 @@
         }
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             background-color: rgba(24, 86, 45, 0.9);
             position: sticky;
@@ -62,6 +63,26 @@
         }
         .organizer-info {
             overflow: hidden;
+        }
+        @media (max-width: 600px) {
+            header {
+                font-size: 16px;
+                padding: 10px;
+            }
+            nav a {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+            .container {
+                margin-top: 20px;
+                border-radius: 0;
+                padding: 15px;
+            }
+            .organizer img {
+                float: none;
+                display: block;
+                margin: 0 auto 10px auto;
+            }
         }
     </style>
 </head>
@@ -125,6 +146,7 @@
             </div>
         </div>
 
+<!--
         <div class="organizer">
             <img src="people/yuanzhi.jpg" alt="Organizer 5">
             <div class="organizer-info">
@@ -133,8 +155,7 @@
                 <p>Challenges TPC Chair</p>
             </div>
         </div>               
-        
-        <p>More details about the organizing team will be announced soon.</p>
+-->
     </div>
 </body>
 </html>
