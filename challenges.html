@@ -91,16 +91,63 @@
         six synchronized ego-centric cameras, with ground-truth depth, semantic and instance segmentation, and static-dynamic masks.
         </p>
 
-        <p>Stay Tuned! Details about the challenge tracks and the dataset will be released soon!</p>
-<!--        
+        
+        <p>Stay Tuned! Details about the dataset will be released soon!</p>
+
+        
         <p style="text-align: justify; text-align-last: left;"></p>
-        The <strong>RichMediaGAI Challenge 2026</strong> includes two tracks: 
+        The <strong>RichMediaGAI Challenge 2026</strong> includes five tracks: 
         <ul>
-            <li><strong>Generative FVV Synthesis</strong>: evaluate novel-view fidelity and temporal consistency</li>
-            <li><strong>Efficient FVV Delivery</strong>: evaluate perceptual quality and latency under constrained bitrate</li>
+            <li><strong>Track 1, 2 for Generative FVV Synthesis</strong>: evaluate novel-view fidelity and temporal consistency</li>
+            <li><strong>Track 3, 4, 5 for Efficient FVV Delivery</strong>: evaluate perceptual quality and latency under constrained bitrate</li>
         </ul>
         </p>
-            
+
+        
+        <h2>Track 1: 3D Gaussian Splatting</h2>
+        <p style="text-align: justify; text-align-last: left;">
+                3D Gaussian Splatting (3DGS) has emerged as a promising representation for novel view synthesis (NVS). 
+                However, large-scale and complex scenes remain challenging due to intricate geometry, view-dependent appearance, 
+                and fine-grained details. The goal of Track 1 is to improve the rendering quality of 3DGS-based NVS while 
+                maintaining efficient real-time computational performance.
+        </p>
+
+        <h2>Track 2: 4D Gaussian Splatting</h2>
+        <p style="text-align: justify; text-align-last: left;">
+            4D Gaussian Splatting (4DGS) extends 3DGS to dynamic scenes by incorporating the temporal dimension. 
+            However, real-world dynamic scenes introduce additional challenges, including complex motion, occlusion, 
+            and temporally varying appearance, making it difficult to maintain both spatial fidelity and temporal consistency. 
+            The goal of Track 2 is to improve the quality of 4DGS-based NVS and encourage methods that achieve 
+            photorealistic rendering across both spatial and temporal dimensions.
+        </p>
+
+        <h2>Track 3: 4D Gaussian Splatting Streaming</h2>
+        <p style="text-align: justify; text-align-last: left;">
+            4DGS supports free-view video, making it highly attractive for immersive streaming applications. 
+            However, real-time streaming of 4DGS content introduces strict constraints on latency and bandwidth, 
+            and efficiently transmitting temporally coherent Gaussian representations while preserving rendering quality 
+            under limited network conditions remains an open problem. The goal of Track 3 is to develop efficient 
+            4DGS streaming strategies that balance visual fidelity, transmission efficiency, and low-latency playback.
+        </p>
+
+        <h2>Track 4: 3D Gaussian Splatting Compression</h2>
+        <p style="text-align: justify; text-align-last: left;">
+            3DGS provides a powerful representation for high-quality NVS. However, the large number of Gaussian primitives and associated 
+            attributes often results in substantial storage and transmission costs, limiting scalability and practical deployment. 
+            Reducing redundancy in the parameters of 3DGS representations while preserving rendering quality remains a key challenge. 
+            The goal of Track 4 is to develop effective 3DGS compression methods that achieve a better trade-off between 
+            representation compactness, rendering fidelity, and computational efficiency.
+        </p>      
+
+        <h2>Track 5: 4D Gaussian Splatting Compression</h2>
+        <p style="text-align: justify; text-align-last: left;">
+            4DGS extends 3DGS to dynamic scenes by modeling both spatial and temporal variations. 
+            While this enables photorealistic free-view video rendering, it also introduces significantly higher representation complexity and redundancy 
+            across both space and time. Efficiently reducing redundancy in the parameters of 4DGS representations without sacrificing spatial quality 
+            or temporal consistency remains an open problem. The goal of Track 5 is to develop effective 4DGS compression methods that improve 
+            epresentation compactness while maintaining high rendering fidelity and efficient decoding performance.
+        </p>        
+<!--                    
         <p style="text-align: justify; text-align-last: left;"><strong>M<sup>3</sup>VIR-2 Dataset</strong></p>
         <p style="text-align: justify; text-align-last: left;">
         The entire M<sup>3</sup>VIR-2 dataset covers 80 scenes from 8 categories (examples shown below), 10 scenes in each category. 
